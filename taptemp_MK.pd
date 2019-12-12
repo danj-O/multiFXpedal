@@ -1,0 +1,28 @@
+#N canvas 332 418 450 300 10;
+#X obj 123 129 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 123 198 midiout;
+#X obj 123 104 select 0 1;
+#X msg 213 176 252;
+#X msg 211 153 250;
+#X msg 123 175 248;
+#X obj 123 153 metro 20.8333;
+#X floatatom 198 133 5 0 0 0 - - -, f 5;
+#X obj 122 80 expr (60000/$f1/24);
+#X text 121 61 midi out for MK!!!;
+#X obj 118 37 inlet;
+#X obj 37 95 loadbang;
+#X msg 37 117 1;
+#X connect 0 0 2 0;
+#X connect 0 0 6 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 1;
+#X connect 8 0 7 0;
+#X connect 10 0 8 0;
+#X connect 11 0 12 0;
+#X connect 12 0 0 0;
